@@ -7,6 +7,7 @@ export default css`
   :root {
     --dimmed-zindex: 10;
     --alert-zindex: 11;
+    font-family: 'Nanum Gothic', sans-serif;
   }
 
   html,

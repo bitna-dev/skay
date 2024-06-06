@@ -8,12 +8,10 @@ interface LoaderProps {
 
 const Loader = ({ size = 11, full }: LoaderProps) => {
   if (full) {
-    return (
-      <SyncLoader css={LoaderStyles} color={colors.borderGray} size={size} />
-    )
+    return <SyncLoader css={LoaderStyles} color={colors.gray} size={size} />
   }
 
-  return <SyncLoader color={colors.borderGray} size={size} />
+  return <SyncLoader color={colors.gray} size={size} />
 }
 const LoaderStyles = css`
   position: absolute;

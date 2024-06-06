@@ -1,15 +1,27 @@
 import ReactDOM from 'react-dom/client'
-import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 import globalStyle from '@styles/globalStyle'
 import { Global } from '@emotion/react'
+import { BrowserRouter as Router } from 'react-router-dom'
+import { QueryClient, QueryClientProvider } from 'react-query'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
+const client = new QueryClient({
+  defaultOptions: {
+    queries: {
+      retry: 0,
+    },
+  },
+})
 root.render(
   <>
-    <Global styles={globalStyle} />
-    <App />
+    <Router>
+      <Global styles={globalStyle} />
+      <QueryClientProvider client={client}>
+        <App />
+      </QueryClientProvider>
+    </Router>
   </>,
 )
 

@@ -1,4 +1,4 @@
-import { css } from '@emotion/react'
+import { css, SerializedStyles } from '@emotion/react'
 import Flex from './Flex'
 import Text from './Text'
 
@@ -9,6 +9,7 @@ interface ListRowProps {
   withArrow?: boolean
   onClick?: () => void
   as?: 'div' | 'li'
+  style?: SerializedStyles
 }
 
 const ListRow = ({
@@ -18,12 +19,18 @@ const ListRow = ({
   withArrow,
   onClick,
   as = 'li',
+  style,
 }: ListRowProps) => {
   return (
-    <Flex as={as} css={ListRowContainerStyles} align="center" onClick={onClick}>
-      <Flex css={ListLeftStyles}>{left}</Flex>
+    <Flex
+      as={as}
+      css={[ListRowContainerStyles, style]}
+      align="center"
+      onClick={onClick}
+    >
+      {left && <Flex css={ListLeftStyles}>{left}</Flex>}
       <Flex css={ListRowContentsStyles}>{contents}</Flex>
-      <Flex>{right}</Flex>
+      {right && <Flex>{right}</Flex>}
       {withArrow ? <IconArrowRight /> : null}
     </Flex>
   )

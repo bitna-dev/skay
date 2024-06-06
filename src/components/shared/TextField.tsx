@@ -28,7 +28,7 @@ const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
       setFocused(false)
       onBlur?.(event)
     }
-    const labelColor = hasError ? 'red' : focused ? 'blue' : 'textGray'
+    const labelColor = hasError ? 'red' : focused ? 'blue' : 'gray'
 
     return (
       <div>
