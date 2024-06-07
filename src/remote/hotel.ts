@@ -2,6 +2,8 @@ import { Hotel } from '@components/models/hotel'
 import { COLLECTIONS } from '@constants/index'
 import {
   collection,
+  doc,
+  getDoc,
   getDocs,
   limit,
   query,
@@ -35,4 +37,12 @@ export const getHotels = async (pageParam?: QuerySnapshot<Hotel>) => {
     items,
     lastVisible,
   }
+}
+
+export const getHotel = async (id: string) => {
+  const snapshot = await getDoc(doc(store, COLLECTIONS.HOTEL, id))
+  return {
+    id,
+    ...snapshot.data(),
+  } as Hotel
 }

@@ -5,7 +5,7 @@ import { useInfiniteQuery } from 'react-query'
 const useHotels = () => {
   const {
     data,
-    hasNextPage = 'false',
+    hasNextPage = false,
     fetchNextPage,
     isFetching,
   } = useInfiniteQuery(['hotels'], ({ pageParam }) => getHotels(pageParam), {
