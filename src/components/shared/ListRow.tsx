@@ -39,8 +39,8 @@ const ListRowTexts = ({
   title,
   subTitle,
 }: {
-  title: string
-  subTitle: string
+  title: React.ReactNode
+  subTitle: React.ReactNode
 }) => {
   return (
     <Flex direction="column">
@@ -72,7 +72,6 @@ export default ListRow
 ListRow.Texts = ListRowTexts
 const ListRowContainerStyles = css`
   padding: 8px 24px;
-  cursor: pointer;
 `
 const ListLeftStyles = css`
   margin-right: 14px;

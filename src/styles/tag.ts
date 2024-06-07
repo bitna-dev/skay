@@ -3,7 +3,7 @@ import { css } from '@emotion/react'
 export const tagSizeMap = {
   small: css`
     font-size: 10px;
-    padding: 6px 10px;
+    padding: 4px 10px;
   `,
   medium: css`
     font-size: 12px;
