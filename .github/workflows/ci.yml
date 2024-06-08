@@ -10,7 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v2
-        with: node-version:'18'
+        with:
+          node-version: '18'
       - run: yarn install
       - run: yarn lint
   build:
@@ -20,6 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v2
-        with: node-version:'18'
+        with:
+          node-version: '18'
       - run: yarn install
       - run: CI='false' yarn build
