@@ -3,8 +3,10 @@ import Home from '@pages/Home'
 import Test from '@pages/Test'
 import Layout from '@components/shared/Layout'
 import Hotel from '@pages/Hotel'
+import useLoadKakao from '@hooks/useLoadKakao'
 
 function App() {
+  useLoadKakao()
   return (
     <>
       <Layout>

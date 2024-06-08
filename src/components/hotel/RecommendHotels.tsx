@@ -30,9 +30,8 @@ const RecommendHotels = ({
       <Spacing size={16} />
       <ul>
         {hotelList.map((hotel) => (
-          <Link to={`/hotel/${hotel.id}`}>
+          <Link to={`/hotel/${hotel.id}`} key={hotel.id}>
             <ListRow
-              key={hotel.id}
               left={
                 <img
                   src={hotel.mainImageUrl}
