@@ -5,7 +5,9 @@ import globalStyle from '@styles/globalStyle'
 import { Global } from '@emotion/react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from 'react-query'
-
+import 'react-toastify/dist/ReactToastify.css'
+import { ToastContainer } from 'react-toastify'
+import '@smastrom/react-rating/style.css'
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 const client = new QueryClient({
   defaultOptions: {
@@ -19,6 +21,7 @@ root.render(
     <Router>
       <Global styles={globalStyle} />
       <QueryClientProvider client={client}>
+        <ToastContainer autoClose={1500} />
         <App />
       </QueryClientProvider>
     </Router>

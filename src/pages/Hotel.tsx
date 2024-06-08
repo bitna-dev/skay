@@ -6,6 +6,7 @@ import Top from '@components/shared/Top'
 import { useParams } from 'react-router-dom'
 import Rooms from '@components/hotel/Rooms'
 import Map from '@components/hotel/Map'
+import RecommendHotels from '@components/hotel/RecommendHotels'
 
 const Hotel = () => {
   const { id } = useParams() as { id: string }
@@ -13,9 +14,9 @@ const Hotel = () => {
   const { data, isLoading } = useHotel({ id })
 
   if (isLoading || data == null) {
-    return <Loader />
+    return <Loader full />
   } else {
-    const { name, comment, images, contents, location } = data
+    const { name, comment, images, contents, location, recommendHotels } = data
 
     return (
       <>
@@ -24,6 +25,7 @@ const Hotel = () => {
         <Rooms />
         <Contents contents={contents} />
         <Map location={location} />
+        <RecommendHotels recommendHotels={recommendHotels} />
       </>
     )
   }

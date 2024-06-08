@@ -3364,6 +3364,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@smastrom/react-rating@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "@smastrom/react-rating@npm:1.5.0"
+  peerDependencies:
+    react: ">=18"
+    react-dom: ">=18"
+  checksum: 10c0/c8172b243a69e38736c211c3eaf5014bc84ee902ee134903a9095cb6087f0aa869552ad3d12909ff91f6386a778d837b538a6e439bfa33c8cda0ebd00821ab80
+  languageName: node
+  linkType: hard
+
 "@surma/rollup-plugin-off-main-thread@npm:^2.2.3":
   version: 2.2.3
   resolution: "@surma/rollup-plugin-off-main-thread@npm:2.2.3"
@@ -5628,6 +5638,13 @@ __metadata:
     kind-of: "npm:^6.0.2"
     shallow-clone: "npm:^3.0.0"
   checksum: 10c0/637753615aa24adf0f2d505947a1bb75e63964309034a1cf56ba4b1f30af155201edd38d26ffe26911adaae267a3c138b344a4947d39f5fc1b6d6108125aa758
+  languageName: node
+  linkType: hard
+
+"clsx@npm:^2.1.0":
+  version: 2.1.1
+  resolution: "clsx@npm:2.1.1"
+  checksum: 10c0/c4c8eb865f8c82baab07e71bfa8897c73454881c4f99d6bc81585aecd7c441746c1399d08363dc096c550cceaf97bd4ce1e8854e1771e9998d9f94c4fe075839
   languageName: node
   linkType: hard
 
@@ -13107,6 +13124,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-toastify@npm:^10.0.5":
+  version: 10.0.5
+  resolution: "react-toastify@npm:10.0.5"
+  dependencies:
+    clsx: "npm:^2.1.0"
+  peerDependencies:
+    react: ">=18"
+    react-dom: ">=18"
+  checksum: 10c0/66c68ec3d6c017d9f32652d73bb925224921c6a80b629b9d481430d5b4fd504abb7a99995a64b9aef0fc31326c74f3cbe088b3287b978dd0c355079c4bbf4158
+  languageName: node
+  linkType: hard
+
 "react@npm:^18.3.1":
   version: 18.3.1
   resolution: "react@npm:18.3.1"
@@ -13885,6 +13914,7 @@ __metadata:
     "@emotion/react": "npm:^11.11.4"
     "@emotion/styled": "npm:^11.11.5"
     "@react-google-maps/api": "npm:^2.19.3"
+    "@smastrom/react-rating": "npm:^1.5.0"
     "@testing-library/jest-dom": "npm:^5.14.1"
     "@testing-library/react": "npm:^13.0.0"
     "@testing-library/user-event": "npm:^13.2.1"
@@ -13909,6 +13939,7 @@ __metadata:
     react-router-dom: "npm:^6.23.1"
     react-scripts: "npm:5.0.1"
     react-spinners: "npm:^0.13.8"
+    react-toastify: "npm:^10.0.5"
     swiper: "npm:^11.1.4"
     typescript: "npm:^4.4.2"
     web-vitals: "npm:^2.1.0"

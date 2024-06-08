@@ -34,6 +34,7 @@ const RAW_RUNTIME_STATE =
           ["@emotion/react", "virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:11.11.4"],\
           ["@emotion/styled", "virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:11.11.5"],\
           ["@react-google-maps/api", "virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:2.19.3"],\
+          ["@smastrom/react-rating", "virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:1.5.0"],\
           ["@testing-library/jest-dom", "npm:5.17.0"],\
           ["@testing-library/react", "virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:13.4.0"],\
           ["@testing-library/user-event", "virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:13.5.0"],\
@@ -58,6 +59,7 @@ const RAW_RUNTIME_STATE =
           ["react-router-dom", "virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:6.23.1"],\
           ["react-scripts", "virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:5.0.1"],\
           ["react-spinners", "virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:0.13.8"],\
+          ["react-toastify", "virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:10.0.5"],\
           ["swiper", "npm:11.1.4"],\
           ["typescript", "patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587"],\
           ["web-vitals", "npm:2.1.4"]\
@@ -5937,6 +5939,32 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@smastrom/react-rating", [\
+      ["npm:1.5.0", {\
+        "packageLocation": "./.yarn/cache/@smastrom-react-rating-npm-1.5.0-8d9f61ddf1-c8172b243a.zip/node_modules/@smastrom/react-rating/",\
+        "packageDependencies": [\
+          ["@smastrom/react-rating", "npm:1.5.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:1.5.0", {\
+        "packageLocation": "./.yarn/__virtual__/@smastrom-react-rating-virtual-fc9d0fc5dd/0/cache/@smastrom-react-rating-npm-1.5.0-8d9f61ddf1-c8172b243a.zip/node_modules/@smastrom/react-rating/",\
+        "packageDependencies": [\
+          ["@smastrom/react-rating", "virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:1.5.0"],\
+          ["@types/react", "npm:18.3.3"],\
+          ["@types/react-dom", "npm:18.3.0"],\
+          ["react", "npm:18.3.1"],\
+          ["react-dom", "virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:18.3.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-dom",\
+          "@types/react",\
+          "react-dom",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@surma/rollup-plugin-off-main-thread", [\
       ["npm:2.2.3", {\
         "packageLocation": "./.yarn/unplugged/@surma-rollup-plugin-off-main-thread-npm-2.2.3-1f57d3eded/node_modules/@surma/rollup-plugin-off-main-thread/",\
@@ -8794,6 +8822,15 @@ const RAW_RUNTIME_STATE =
           ["is-plain-object", "npm:2.0.4"],\
           ["kind-of", "npm:6.0.3"],\
           ["shallow-clone", "npm:3.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["clsx", [\
+      ["npm:2.1.1", {\
+        "packageLocation": "./.yarn/cache/clsx-npm-2.1.1-96125b98be-c4c8eb865f.zip/node_modules/clsx/",\
+        "packageDependencies": [\
+          ["clsx", "npm:2.1.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -18351,6 +18388,33 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["react-toastify", [\
+      ["npm:10.0.5", {\
+        "packageLocation": "./.yarn/cache/react-toastify-npm-10.0.5-86b63c99fc-66c68ec3d6.zip/node_modules/react-toastify/",\
+        "packageDependencies": [\
+          ["react-toastify", "npm:10.0.5"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:10.0.5", {\
+        "packageLocation": "./.yarn/__virtual__/react-toastify-virtual-d3a6a7a3f0/0/cache/react-toastify-npm-10.0.5-86b63c99fc-66c68ec3d6.zip/node_modules/react-toastify/",\
+        "packageDependencies": [\
+          ["react-toastify", "virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:10.0.5"],\
+          ["@types/react", "npm:18.3.3"],\
+          ["@types/react-dom", "npm:18.3.0"],\
+          ["clsx", "npm:2.1.1"],\
+          ["react", "npm:18.3.1"],\
+          ["react-dom", "virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:18.3.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-dom",\
+          "@types/react",\
+          "react-dom",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["read-cache", [\
       ["npm:1.0.0", {\
         "packageLocation": "./.yarn/cache/read-cache-npm-1.0.0-00fa89ed05-90cb275021.zip/node_modules/read-cache/",\
@@ -19189,6 +19253,7 @@ const RAW_RUNTIME_STATE =
           ["@emotion/react", "virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:11.11.4"],\
           ["@emotion/styled", "virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:11.11.5"],\
           ["@react-google-maps/api", "virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:2.19.3"],\
+          ["@smastrom/react-rating", "virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:1.5.0"],\
           ["@testing-library/jest-dom", "npm:5.17.0"],\
           ["@testing-library/react", "virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:13.4.0"],\
           ["@testing-library/user-event", "virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:13.5.0"],\
@@ -19213,6 +19278,7 @@ const RAW_RUNTIME_STATE =
           ["react-router-dom", "virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:6.23.1"],\
           ["react-scripts", "virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:5.0.1"],\
           ["react-spinners", "virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:0.13.8"],\
+          ["react-toastify", "virtual:0215da8c507363ae25fabe8f002bf73eed99cf2c5e660432a90cc845524a4d7b314c9d6f0d9d17493bf45146b7b9f275c092751a3342a76eabda8f65e83ecd6f#npm:10.0.5"],\
           ["swiper", "npm:11.1.4"],\
           ["typescript", "patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587"],\
           ["web-vitals", "npm:2.1.4"]\
